@@ -1,0 +1,19 @@
+{
+  "name": "bones-theme",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@wpackio/scripts": "^6.4.0",
+    "postcss": "^8.4.12",
+    "sass": "^1.49.10"
+  },
+  "scripts": {
+    "bootstrap": "wpackio-scripts bootstrap",
+    "build": "wpackio-scripts build",
+    "start": "wpackio-scripts start",
+    "archive": "wpackio-scripts pack"
+  },
+  "dependencies": {
+    "@wpackio/entrypoint": "^6.4.0"
+  }
+}

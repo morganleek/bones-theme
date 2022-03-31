@@ -1,0 +1,50 @@
+{
+  "app/main.js.map": "app/main.js.map",
+  "editor.js": "app/editor.js",
+  "editor.js.map": "app/editor.js.map",
+  "main.css": "app/main.css",
+  "main.css.map": "app/main.css.map",
+  "main.js": "app/main.js",
+  "main.js.map": "main.5e9f05ee616c24c2ec9c.hot-update.js.map",
+  "runtime.js": "app/runtime.js",
+  "runtime.js.map": "app/runtime.js.map",
+  "vendors~editor~main.js": "app/vendors~editor~main.js",
+  "vendors~editor~main.js.map": "app/vendors~editor~main.js.map",
+  "wpackioEp": {
+    "main": {
+      "assets": {
+        "js": [
+          "app/runtime.js",
+          "app/vendors~editor~main.js",
+          "app/main.js"
+        ],
+        "js.map": [
+          "app/runtime.js.map",
+          "app/vendors~editor~main.js.map",
+          "app/main.js.map",
+          "main.5e9f05ee616c24c2ec9c.hot-update.js.map"
+        ],
+        "css": [
+          "app/main.css"
+        ],
+        "css.map": [
+          "app/main.css.map"
+        ]
+      }
+    },
+    "editor": {
+      "assets": {
+        "js": [
+          "app/runtime.js",
+          "app/vendors~editor~main.js",
+          "app/editor.js"
+        ],
+        "js.map": [
+          "app/runtime.js.map",
+          "app/vendors~editor~main.js.map",
+          "app/editor.js.map"
+        ]
+      }
+    }
+  }
+}

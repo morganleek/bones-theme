@@ -1,0 +1,8 @@
+@use './styles/core/global';
+@use './styles/layout/header';
+@use './styles/layout/blocks';
+@use './styles/layout/footer';
+
+body {
+	background: #d0f0f0;
+}
