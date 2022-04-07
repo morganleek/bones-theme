@@ -1,0 +1,10 @@
+.wp-block-group {
+	&.alignfull {
+		& + .wp-block-group.alignfull {
+			margin-top: 0;
+		}
+	}
+	&:where( .has-background ) {
+		padding: 1.25em var(--wp--custom--padding--horizontal);
+	}
+}

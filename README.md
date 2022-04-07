@@ -9,11 +9,15 @@ npm run bootstrap
 composer require wpackio/enqueue
 ```
 
-Update the wpackio.server.js proxy to your local development URL.
+Update the wpackio.server.js 'proxy' to your local development URL.
 
 ```bash
 npm run
 ```
+
+## Development 
+
+Update the ```slug``` value in the ```wpackio.project.js``` to reflect the directory of your theme.
 
 ## Build
 

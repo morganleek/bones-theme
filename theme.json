@@ -143,6 +143,14 @@
 				"large": "clamp(4rem, 10vw, 8rem)",
 				"outer": "var(--wp--custom--spacing--small, 1.25rem)"
 			},
+			"sizing": {
+				"narrow": "800px",
+				"wide": "1000px",
+				"super": "1920px"
+			},
+			"padding": {
+				"horizontal": "2.5rem"
+			},
 			"typography": {
 				"font-size": {
 					"huge": "clamp(2.25rem, 4vw, 2.75rem)",
@@ -201,8 +209,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "650px",
-			"wideSize": "1000px"
+			"contentSize": "var(--wp--custom--sizing--narrow)",
+			"wideSize": "var(--wp--custom--sizing--wide)"
 		}
 	},
 	"styles": {

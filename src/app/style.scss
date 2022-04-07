@@ -1,8 +1,7 @@
 @use './styles/core/global';
+@use './styles/core/type';
 @use './styles/layout/header';
-@use './styles/layout/blocks';
+@use './styles/blocks/blocks';
 @use './styles/layout/footer';
 
-body {
-	background: #def4f4;
-}
+// body {}

@@ -1,0 +1,21 @@
+@use "../core/mixins";
+
+.wp-block-cover {
+	padding: 1.25em var(--wp--custom--padding--horizontal);	
+	&.alignfull {
+		& + .wp-block-group.alignfull {
+			margin-top: 0;
+		}
+	}
+	.wp-block-cover__inner-container {
+		@include mixins.trim;
+		max-width: var(--wp--custom--sizing--narrow);
+		margin-left: auto;
+		margin-right: auto;
+		.wp-block-columns {
+			.wp-block-column {
+				@include mixins.trim;
+			}
+		}
+	}
+}
