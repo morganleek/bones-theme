@@ -60,6 +60,8 @@
 			// Add editor styles
 			add_theme_support( 'editor-styles' );
 
+			add_theme_support( 'custom-spacing' );
+
 			// add_editor_style( 'style.css' );
 
 			// Enqueue editor styles.

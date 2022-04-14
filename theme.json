@@ -173,7 +173,8 @@
 				"rem",
 				"vh",
 				"vw"
-			]
+			],
+			"customMargin": true
 		},
 		"typography": {
 			"dropCap": false,
@@ -266,6 +267,11 @@
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
 					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "normal"
+				}
+			},
+			"core/group": {
+				"spacing": {
+					"padding": false
 				}
 			}
 		},
