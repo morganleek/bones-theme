@@ -1,11 +1,10 @@
 {
-  "app/main.js.map": "app/main.js.map",
   "editor.js": "app/editor.js",
   "editor.js.map": "app/editor.js.map",
   "main.css": "app/main.css",
   "main.css.map": "app/main.css.map",
   "main.js": "app/main.js",
-  "main.js.map": "main.34584fb714611f2fa6aa.hot-update.js.map",
+  "main.js.map": "app/main.js.map",
   "runtime.js": "app/runtime.js",
   "runtime.js.map": "app/runtime.js.map",
   "vendors~editor~main.js": "app/vendors~editor~main.js",
@@ -21,8 +20,7 @@
         "js.map": [
           "app/runtime.js.map",
           "app/vendors~editor~main.js.map",
-          "app/main.js.map",
-          "main.34584fb714611f2fa6aa.hot-update.js.map"
+          "app/main.js.map"
         ],
         "css": [
           "app/main.css"

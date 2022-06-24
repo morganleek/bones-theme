@@ -155,7 +155,13 @@
 				"font-size": {
 					"huge": "clamp(2.25rem, 4vw, 2.75rem)",
 					"gigantic": "clamp(2.75rem, 6vw, 3.25rem)",
-					"colossal": "clamp(3.25rem, 8vw, 6.25rem)"
+					"colossal": "clamp(3.25rem, 8vw, 6.25rem)",
+					"heading-1": "clamp(2rem, 1.8750rem + 2.1875vw, 4.5rem)",
+					"heading-2": "clamp(1.625rem, 1.3125rem + 0.7813vw, 2.25rem)",
+					"heading-3": "clamp(1.375rem, 1.1875rem + 0.4688vw, 1.75rem)",
+					"heading-4": "clamp(1.0625rem, 1.0313rem + 0.0781vw, 1.125rem)",
+					"heading-5": "1rem",
+					"heading-6": "0.875rem"
 				},
 				"line-height": {
 					"tiny": 1.15,
@@ -227,52 +233,6 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
-			},
-			"core/post-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
-					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-				}
-			},
-			"core/post-comments": {
-				"spacing": {
-					"padding": {
-						"top": "var(--wp--custom--spacing--small)"
-					}
-				}
-			},
-			"core/pullquote": {
-				"border": {
-					"width": "1px 0"
-				}
-			},
-			"core/query-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
-					"fontWeight": "300",
-					"lineHeight": "var(--wp--custom--typography--line-height--small)",
-					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
-				}
-			},
-			"core/quote": {
-				"border": {
-					"width": "1px"
-				}
-			},
-			"core/site-title": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--system-font)",
-					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
-					"fontSize": "var(--wp--preset--font-size--medium)",
-					"fontWeight": "normal"
-				}
-			},
-			"core/group": {
-				"spacing": {
-					"padding": false
-				}
 			}
 		},
 		"color": {
@@ -285,7 +245,7 @@
 					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
 					"fontWeight": "300",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-					"fontSize": "var(--wp--custom--typography--font-size--colossal)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-1)"
 				}
 			},
 			"h2": {
@@ -293,7 +253,7 @@
 					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
 					"fontWeight": "300",
 					"lineHeight": "var(--wp--custom--typography--line-height--small)",
-					"fontSize": "var(--wp--custom--typography--font-size--gigantic)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-2)"
 				}
 			},
 			"h3": {
@@ -301,7 +261,7 @@
 					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
 					"fontWeight": "300",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-					"fontSize": "var(--wp--custom--typography--font-size--huge)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-3)"
 				}
 			},
 			"h4": {
@@ -309,7 +269,7 @@
 					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
 					"fontWeight": "300",
 					"lineHeight": "var(--wp--custom--typography--line-height--tiny)",
-					"fontSize": "var(--wp--preset--font-size--x-large)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-4)"
 				}
 			},
 			"h5": {
@@ -318,7 +278,7 @@
 					"fontWeight": "700",
 					"textTransform": "uppercase",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-5)"
 				}
 			},
 			"h6": {
@@ -327,7 +287,7 @@
 					"fontWeight": "400",
 					"textTransform": "uppercase",
 					"lineHeight": "var(--wp--custom--typography--line-height--normal)",
-					"fontSize": "var(--wp--preset--font-size--medium)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-6)"
 				}
 			},
 			"link": {
@@ -349,11 +309,6 @@
 		{
 			"name": "header",
 			"title": "Header",
-			"area": "header"
-		},
-		{
-			"name": "header-small-dark",
-			"title": "Header (Dark, small)",
 			"area": "header"
 		},
 		{
