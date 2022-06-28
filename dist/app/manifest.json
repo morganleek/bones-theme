@@ -1,26 +1,32 @@
 {
+  "app/main.js.map": "app/main.js.map",
   "editor.js": "app/editor.js",
   "editor.js.map": "app/editor.js.map",
   "main.css": "app/main.css",
   "main.css.map": "app/main.css.map",
   "main.js": "app/main.js",
-  "main.js.map": "app/main.js.map",
+  "main.js.map": "main.a4f773564a3c452c26c5.hot-update.js.map",
   "runtime.js": "app/runtime.js",
   "runtime.js.map": "app/runtime.js.map",
   "vendors~editor~main.js": "app/vendors~editor~main.js",
   "vendors~editor~main.js.map": "app/vendors~editor~main.js.map",
+  "vendors~main.js": "app/vendors~main.js",
+  "vendors~main.js.map": "app/vendors~main.js.map",
   "wpackioEp": {
     "main": {
       "assets": {
         "js": [
           "app/runtime.js",
           "app/vendors~editor~main.js",
+          "app/vendors~main.js",
           "app/main.js"
         ],
         "js.map": [
           "app/runtime.js.map",
           "app/vendors~editor~main.js.map",
-          "app/main.js.map"
+          "app/vendors~main.js.map",
+          "app/main.js.map",
+          "main.a4f773564a3c452c26c5.hot-update.js.map"
         ],
         "css": [
           "app/main.css"
