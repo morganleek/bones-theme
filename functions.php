@@ -38,6 +38,9 @@
 			add_action( 'admin_init', [$this, 'bones_theme_editor_styles' ] );
 			add_action( 'wp_head', [ $this, 'bones_theme_preload_webfonts' ] );
 			add_action( 'init', [ $this, 'bones_name_register_block_styles' ], 100 );
+
+			// Gallery Sliders
+			add_action( 'wp_print_styles', [ $this, 'update_styles' ] );
 		}
 
 		public function plugin_enqueue() {
@@ -139,6 +142,38 @@
 			//   'label' => __( 'Play', 'bones_name' ),
 			// ] );
 		}
+
+		public function update_gallery_styles( $styles ) {
+			$regex = '/(.wp-block-gallery[\S\w]*)/i';
+			return preg_replace( $regex, '${1}:not(.is-style-gallery-slider) ', $styles );
+		}
+		
+		public function update_styles() {
+			// Extends upon wp-includes/script-loader.php/wp_maybe_inline_styles()
+			global $wp_styles;
+			if( isset( $wp_styles->registered['wp-block-gallery'] ) ) {
+				// `src` is set to false when it's already inlined
+				if( $wp_styles->registered['wp-block-gallery']->src !== false ) {
+					// based on code from inclues `wp_maybe_inline_styles` line:2818
+					$css = file_get_contents( $wp_styles->registered['wp-block-gallery']->extra['path'] );
+
+					// update relative urls
+					$css = _wp_normalize_relative_css_links( $css, $wp_styles->registered['wp-block-gallery']->src );
+
+					// set `src` to `false` and add styles inline
+					$wp_styles->registered[ 'wp-block-gallery' ]->src = false;
+					if ( empty( $wp_styles->registered[ 'wp-block-gallery' ]->extra['after'] ) ) {
+						$wp_styles->registered[ 'wp-block-gallery' ]->extra['after'] = array();
+					}
+					array_unshift( $wp_styles->registered[ 'wp-block-gallery' ]->extra['after'], $css );
+				}
+				
+				// update `src` using regex to exclude our `.is-style-gallery-slider` class 
+				if( isset( $wp_styles->registered['wp-block-gallery']->extra['after'] ) ) {
+					$wp_styles->registered['wp-block-gallery']->extra['after'] = array_map( [ $this, 'update_gallery_styles' ], $wp_styles->registered['wp-block-gallery']->extra['after'] );
+				}	
+			}
+		}
 	}
 
 	// Init
@@ -165,19 +200,22 @@
 
 	// add_filter( 'render_block', 'custom_render', 10, 2 );
 
-	function bones_update_gallery_styles( $styles ) {
-		$regex = '/(.wp-block-gallery[\S\w]*)/i';
-		return preg_replace( $regex, '${1}:not(.is-style-gallery-slider) ', $styles );
-	}
+	// function bones_update_gallery_styles( $styles ) {
+	// 	$regex = '/(.wp-block-gallery[\S\w]*)/i';
+	// 	return preg_replace( $regex, '${1}:not(.is-style-gallery-slider) ', $styles );
+	// }
 	
-	function update_styles() {
-		global $wp_styles;
+	// function update_styles() {
+	// 	global $wp_styles;
 
-		if( isset( $wp_styles->registered['wp-block-gallery'] ) ) {
-			if( isset( $wp_styles->registered['wp-block-gallery']->extra['after'] ) ) {
-				$wp_styles->registered['wp-block-gallery']->extra['after'] = array_map( 'bones_update_gallery_styles', $wp_styles->registered['wp-block-gallery']->extra['after'] );
-			}	
-		}
-	}
+	// 	___( $wp_styles->registered['wp-block-gallery']->extra['after'] );
+	// 	die();
 
-	add_action( 'wp_print_styles', 'update_styles' );
+	// 	if( isset( $wp_styles->registered['wp-block-gallery'] ) ) {
+	// 		if( isset( $wp_styles->registered['wp-block-gallery']->extra['after'] ) ) {
+	// 			$wp_styles->registered['wp-block-gallery']->extra['after'] = array_map( 'bones_update_gallery_styles', $wp_styles->registered['wp-block-gallery']->extra['after'] );
+	// 		}	
+	// 	}
+	// }
+
+	// add_action( 'wp_print_styles', 'update_styles' );
