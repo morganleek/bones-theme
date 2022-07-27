@@ -7,6 +7,14 @@
 			margin-top: 0;
 		}
 	}
+	&.is-position-top-right,
+	&.is-position-top-left,
+	&.is-position-bottom-right,
+	&.is-position-bottom-left {
+		.wp-block-cover__inner-container {
+			max-width: max(66%, 500px);
+		}
+	}	
 	.wp-block-cover__inner-container {
 		@include mixins.trim;
 		max-width: var(--wp--custom--sizing--narrow);

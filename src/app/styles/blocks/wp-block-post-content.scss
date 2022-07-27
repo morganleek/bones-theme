@@ -1,0 +1,10 @@
+.wp-block-post-content {
+	margin-block-start: 0;
+	& > * {
+		&:last-child {
+			&:not(.alignfull) {
+				margin-block-end: var( --wp--style--block-gap );
+			}
+		}
+	}
+}
