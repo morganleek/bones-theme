@@ -1,5 +1,7 @@
 # Bones Theme
-An empty framework to build Wordpress themes with Gutenberg using WPack.io for tooling.
+An empty framework to build Wordpress themes with Gutenberg using WPack.io for tooling. 
+
+For more information on development setup see [wpack.io](https://wpack.io/).
 
 ## Setup
 
@@ -9,15 +11,13 @@ npm run bootstrap
 composer require wpackio/enqueue
 ```
 
-Update the wpackio.server.js 'proxy' to your local development URL.
-
-```bash
-npm run
-```
+Update ```proxy``` value in ```wpackio.server.js```  to your local development URL. I.e. *http://localhost:8888/*
+Update ```slug``` value in ```wpackio.project.js``` to reflect the directory of your theme. I.e. *bt-helm*
 
 ## Development 
-
-Update the ```slug``` value in the ```wpackio.project.js``` to reflect the directory of your theme.
+```bash
+npm run start
+```
 
 ## Build
 
