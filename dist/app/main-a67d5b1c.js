@@ -16,4 +16,4 @@
  * A zero setup Webpack Bundler Script for WordPress
  */
 (window.wpackiobonesThemeappJsonp=window.wpackiobonesThemeappJsonp||[]).push([[2],[function(n,o,e){var t="bonesThemedist".replace(/[^a-zA-Z0-9_-]/g,"");e.p=window["__wpackIo".concat(t)]},function(n,o,e){e(0),n.exports=e(4)},,,function(n,o,e){"use strict";e.r(o),document.addEventListener("DOMContentLoaded",(function(){}))}],[[1,0]]]);
-//# sourceMappingURL=main-eb879456.js.map
+//# sourceMappingURL=main-a67d5b1c.js.map

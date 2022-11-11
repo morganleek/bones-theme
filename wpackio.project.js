@@ -107,6 +107,7 @@ module.exports = {
 		'*.css',
 		'assets/**',
 		'templates/**',
+		'patterns/**',
 		'theme.json',
 		'screenshot.png',
 	],
