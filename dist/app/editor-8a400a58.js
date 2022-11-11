@@ -15,5 +15,5 @@
  * Compiled with the help of https://wpack.io
  * A zero setup Webpack Bundler Script for WordPress
  */
-(window.wpackiobonesThemeappJsonp=window.wpackiobonesThemeappJsonp||[]).push([[1],[function(o,n,p){var e="bonesThemedist".replace(/[^a-zA-Z0-9_-]/g,"");p.p=window["__wpackIo".concat(e)]},,,,function(o,n,p){p(0),o.exports=p(5)},function(o,n){}],[[4,0]]]);
-//# sourceMappingURL=editor-2d0df2c4.js.map
+(window.wpackiobonesThemeappJsonp=window.wpackiobonesThemeappJsonp||[]).push([[1],[function(o,n,p){var e="bonesThemedist".replace(/[^a-zA-Z0-9_-]/g,"");p.p=window["__wpackIo".concat(e)]},,function(o,n,p){p(0),o.exports=p(3)},function(o,n){}],[[2,0]]]);
+//# sourceMappingURL=editor-8a400a58.js.map
