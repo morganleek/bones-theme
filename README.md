@@ -35,10 +35,10 @@ npm run archive
 
 Set Git FTP settings with 'syncroot' pointing at packages directory. You may need to export any templates if these have been edited in WP.
 
-```[git-ftp]
-	url = ftpes://1.1.1.1/public_html/wp-content/themes/{directory_name}
-	user = "username"
-	password = "password"
-	insecure = 1
-	syncroot = package/{directory_name}
+```
+url = ftpes://1.1.1.1/public_html/wp-content/themes/{directory_name}
+user = "username"
+password = "password"
+insecure = 1
+syncroot = package/{directory_name}
 ```
