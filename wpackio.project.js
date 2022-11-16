@@ -108,6 +108,7 @@ module.exports = {
 		'assets/**',
 		'templates/**',
 		'patterns/**',
+		'parts/**',
 		'theme.json',
 		'screenshot.png',
 	],
