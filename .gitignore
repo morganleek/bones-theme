@@ -11,4 +11,7 @@ bundled/
 config.json
 
 # Vendors
-vendor/
+# vendor/
+
+# Packaged Site
+# package/
