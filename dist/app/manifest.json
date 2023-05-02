@@ -1,10 +1,10 @@
 {
   "editor.js": "app/editor-8a400a58.js",
   "editor.js.map": "app/editor-8a400a58.js.map",
-  "main.css": "app/main-f0a9dcbf.css",
-  "main.css.map": "app/main-f0a9dcbf.css.map",
-  "main.js": "app/main-a67d5b1c.js",
-  "main.js.map": "app/main-a67d5b1c.js.map",
+  "main.css": "app/main-2e1eb70b.css",
+  "main.css.map": "app/main-2e1eb70b.css.map",
+  "main.js": "app/main-22e737bc.js",
+  "main.js.map": "app/main-22e737bc.js.map",
   "runtime.js": "app/runtime-6974b681.js",
   "runtime.js.map": "app/runtime-6974b681.js.map",
   "wpackioEp": {
@@ -12,17 +12,17 @@
       "assets": {
         "js": [
           "app/runtime-6974b681.js",
-          "app/main-a67d5b1c.js"
+          "app/main-22e737bc.js"
         ],
         "js.map": [
           "app/runtime-6974b681.js.map",
-          "app/main-a67d5b1c.js.map"
+          "app/main-22e737bc.js.map"
         ],
         "css": [
-          "app/main-f0a9dcbf.css"
+          "app/main-2e1eb70b.css"
         ],
         "css.map": [
-          "app/main-f0a9dcbf.css.map"
+          "app/main-2e1eb70b.css.map"
         ]
       }
     },

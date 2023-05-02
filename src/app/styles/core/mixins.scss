@@ -8,3 +8,17 @@
 		}
 	}
 }
+
+@mixin text-input {
+	border-radius: 0;
+	&::placeholder {
+		color: #000;
+	}
+	&:focus-visible {
+		outline: 1px auto blue;
+	}
+}
+
+@mixin button {
+	border-radius: 0;
+}
