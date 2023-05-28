@@ -1,13 +1,15 @@
-.edit-post-visual-editor__post-title-wrapper {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+.edit-post-visual-editor__post-title-wrapper.is-layout-flow {
+	margin: 0;
+	padding-top: 0.75em;
+	padding-bottom: 0.75em;
+	border-bottom: 1px solid #e0e0e0;
 	h1, h2 {
 		&.wp-block-post-title {
-			margin-top: 0;
-			margin-bottom: 0;
-			font-size: 1.375rem;
-			padding-left: 1em;
-			padding-right: 1em;
+			font-size: 1.5rem;
+			font-weight: 600;
+			width: calc(100% - 2 * var(--wp--custom--padding--horizontal) );
+			max-width: var(--wp--custom--sizing--narrow);
+			margin: 0 auto !important;
 		}
 	}
 }
