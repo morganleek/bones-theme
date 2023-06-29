@@ -28,12 +28,12 @@
 	& > * {
 		&:first-child {
 			&:not(.alignfull) {
-				margin-top: 50px;
+				margin-block-start: var(--wp--style--block-gap);
 			}
 		}
 		&:last-child {
 			&:not(.alignfull) {
-				margin-bottom: 100px !important;
+				margin-block-end: var(--wp--style--block-gap);
 			}
 		}
 	}

@@ -2,6 +2,18 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"customTemplates": [],
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Foooter",
+			"area": "footer"
+		}
+	],
 	"settings": {
 		"appearanceTools": true,
 		"color": {
@@ -62,16 +74,16 @@
 					"x-large": "clamp(1.75rem, 3vw, 2.25rem)"
 				},
 				"line-height": {
-					"tiny": 1.15,
-					"small": 1.2,
-					"medium": 1.4,
-					"normal": 1.6,
 					"heading-1": 1,
 					"heading-2": 1.2,
 					"heading-3": 1.2,
 					"heading-4": 1.2,
 					"heading-5": 1.2,
-					"heading-6": 1.2
+					"heading-6": 1.2,
+					"small": 1.2,
+					"medium": 1.4,
+					"large": 1.4,
+					"x-large": 1.4
 				}
 			}
 		},
@@ -94,9 +106,75 @@
 					"slug": "system-font"
 				},
 				{
-					"fontFamily": "serif",
-					"name": "Source Serif Pro",
-					"slug": "source-serif-pro"
+					"fontFamily": "'PT Sans Narrow'",
+					"name": "PT Sans Narrow",
+					"slug": "pt-sans-narrow",
+					"fontFace": [
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsbCLwR2oefDofMY.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsbCCwR2oefDofMY.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsbCIwR2oefDofMY.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngRUXNadjH0qYEzV7ab-oWlsbCGwR2oefDo.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95AiIW_3CRs-2UEU.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95AiBW_3CRs-2UEU.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95AiLW_3CRs-2UEU.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "PT Sans Narrow",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/ptsansnarrow/v18/BngSUXNadjH0qYEzV7ab-oWlsbg95AiFW_3CRs-2.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						}
+					]
 				},
 				{
 					"fontFamily": "\"Inter var\"",
@@ -156,7 +234,7 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-1)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-1)",
@@ -165,7 +243,7 @@
 			},
 			"h2": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-2)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-2)",
@@ -174,7 +252,7 @@
 			},
 			"h3": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-3)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-3)",
@@ -183,7 +261,7 @@
 			},
 			"h4": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-4)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-4)",
@@ -192,7 +270,7 @@
 			},
 			"h5": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-5)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-5)",
@@ -201,7 +279,7 @@
 			},
 			"h6": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+					"fontFamily": "var(--wp--preset--font-family--pt-sans-narrow)",
 					"fontWeight": "400",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-6)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-6)"

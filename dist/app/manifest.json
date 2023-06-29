@@ -1,8 +1,8 @@
 {
   "editor.js": "app/editor-8a400a58.js",
   "editor.js.map": "app/editor-8a400a58.js.map",
-  "main.css": "app/main-d130aba7.css",
-  "main.css.map": "app/main-d130aba7.css.map",
+  "main.css": "app/main-c2c97996.css",
+  "main.css.map": "app/main-c2c97996.css.map",
   "main.js": "app/main-22e737bc.js",
   "main.js.map": "app/main-22e737bc.js.map",
   "runtime.js": "app/runtime-6974b681.js",
@@ -19,10 +19,10 @@
           "app/main-22e737bc.js.map"
         ],
         "css": [
-          "app/main-d130aba7.css"
+          "app/main-c2c97996.css"
         ],
         "css.map": [
-          "app/main-d130aba7.css.map"
+          "app/main-c2c97996.css.map"
         ]
       }
     },

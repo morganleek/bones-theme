@@ -1,11 +1,18 @@
 header {
 	&.wp-block-template-part {
-
+		& > .wp-block-group {
+			padding-left: var(--wp--custom--spacing--outer);
+			padding-right: var(--wp--custom--spacing--outer);
+		}
 	}
 }
 
 footer {
 	&.wp-block-template-part {
 		margin-block-start: 0;
+		& > .wp-block-group {
+			padding-left: var(--wp--custom--spacing--outer);
+			padding-right: var(--wp--custom--spacing--outer);
+		}
 	}
 }
