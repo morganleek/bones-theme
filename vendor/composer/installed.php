@@ -1,33 +1,32 @@
-<?php return array (
-  'root' => 
-  array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
-    'aliases' => 
-    array (
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'a3c947c541a1add9b2d94e43a4f1c1734398d41b',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
     ),
-    'reference' => 'fc990b1542a3f5aa6fe93cc2060db09196bc631b',
-    'name' => '__root__',
-  ),
-  'versions' => 
-  array (
-    '__root__' => 
-    array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'fc990b1542a3f5aa6fe93cc2060db09196bc631b',
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'a3c947c541a1add9b2d94e43a4f1c1734398d41b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'wpackio/enqueue' => array(
+            'pretty_version' => '3.5.0',
+            'version' => '3.5.0.0',
+            'reference' => '944dd17df10e2e534e62ca3f5f20e550c2058a63',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../wpackio/enqueue',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
     ),
-    'wpackio/enqueue' => 
-    array (
-      'pretty_version' => '3.4.0',
-      'version' => '3.4.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '8a5604f5ab3bd5f000e503dda02603e15e534d47',
-    ),
-  ),
 );
