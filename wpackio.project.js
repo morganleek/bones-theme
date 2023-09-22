@@ -4,7 +4,7 @@ module.exports = {
 	// Project Identity
 	appName: 'bonesTheme', // Unique name of your project
 	type: 'theme', // Plugin or theme
-	slug: 'bt-redmountain', // Plugin or Theme slug, basically the directory name under `wp-content/<themes|plugins>`
+	slug: 'bones-theme', // Plugin or Theme slug, basically the directory name under `wp-content/<themes|plugins>`
 	// Used to generate banners on top of compiled stuff
 	bannerConfig: {
 		name: 'bonesTheme',
@@ -22,17 +22,10 @@ module.exports = {
 		{
 			name: 'app',
 			entry: {
-				// mention each non-interdependent files as entry points
-		     // The keys of the object will be used to generate filenames
-		     // The values can be string or Array of strings (string|string[])
-		     // But unlike webpack itself, it can not be anything else
-		     // <https://webpack.js.org/concepts/#entry>
-		     // You do not need to worry about file-size, because we would do
-		     // code splitting automatically. When using ES6 modules, forget
-		     // global namespace pollutions 😉
 				// vendor: './src/app/vendor.js', // Could be a string
 				main: ['./src/app/index.js'], // Or an array of string (string[])
-				editor: ['./src/app/editor.js'], // Or an array of string (string[])
+				// editor: ['./src/app/editor.js'], // Or an array of string (string[])
+				// variations: ['./src/app/variations.js']
 			},
 			// If enabled, all WordPress provided external scripts, including React
 			// and ReactDOM are aliased automatically. Do note that all `@wordpress`
