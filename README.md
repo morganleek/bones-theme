@@ -11,11 +11,11 @@ npm run bootstrap
 composer require wpackio/enqueue
 ```
 
-In ```wpackio.server.js```
+#### In ```wpackio.server.js```
 - Set a ```proxy``` value to your local URL *http://localhost:8888*
 - Set ```host``` to your server's IP address if working remotely
 
-In ```wpackio.project.js``` to reflect the directory of your 
+#### In ```wpackio.project.js``` to reflect the directory of your 
 - Update ```slug``` value theme directory name *bt-folder-name*
 
 ### Development 
