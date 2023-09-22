@@ -11,28 +11,29 @@ npm run bootstrap
 composer require wpackio/enqueue
 ```
 
-Update ```proxy``` value in ```wpackio.server.js```  to your local development URL. I.e. *http://localhost:8888/*
-Update ```slug``` value in ```wpackio.project.js``` to reflect the directory of your theme. I.e. *bt-helm*
+In ```wpackio.server.js```
+- Set a ```proxy``` value to your local URL *http://localhost:8888*
+- Set ```host``` to your server's IP address if working remotely
 
-## Development 
+In ```wpackio.project.js``` to reflect the directory of your 
+- Update ```slug``` value theme directory name *bt-folder-name*
+
+### Development 
 ```bash
 npm run start
 ```
 
-## Build
-
+### Build
 ```bash
 npm run build
 ```
 
-## Deploy
-
+### Deploy
 ```bash
 npm run archive
 ```
 
-## Git FTP
-
+### Git FTP
 Set Git FTP settings with 'syncroot' pointing at packages directory. You may need to export any templates if these have been edited in WP.
 
 ```
