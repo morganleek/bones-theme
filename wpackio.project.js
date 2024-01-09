@@ -4,7 +4,7 @@ module.exports = {
 	// Project Identity
 	appName: 'bonesTheme', // Unique name of your project
 	type: 'theme', // Plugin or theme
-	slug: 'bones-theme', // Plugin or Theme slug, basically the directory name under `wp-content/<themes|plugins>`
+	slug: 'bt-swan-river', // Plugin or Theme slug, basically the directory name under `wp-content/<themes|plugins>`
 	// Used to generate banners on top of compiled stuff
 	bannerConfig: {
 		name: 'bonesTheme',

@@ -18,7 +18,13 @@
 		"appearanceTools": true,
 		"color": {
 			"duotone": [],
-			"gradients": [],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(90deg,rgb(21,74,112) 33%,rgba(21,74,112,0) 66%)",
+					"name": "Blue to Clear",
+					"slug": "blue-to-clear"
+				}
+			],
 			"palette": [
 				{
 					"slug": "black",
@@ -32,13 +38,48 @@
 				},
 				{
 					"slug": "blue",
-					"color": "#0693e3",
+					"color": "#023047",
 					"name": "Blue"
 				},
 				{
+					"slug": "blue-medium",
+					"color": "#154A70",
+					"name": "Blue Medium"
+				},
+				{
+					"slug": "baby-blue",
+					"color": "#8ECAE6",
+					"name": "Baby Blue"
+				},
+				{
+					"slug": "blue-dark",
+					"color": "#001A26",
+					"name": "Blue Dark"
+				},
+				{
+					"slug": "aqua",
+					"color": "#219EBC",
+					"name": "Aqua"
+				},
+				{
 					"slug": "yellow",
-					"color": "#fcb900",
+					"color": "#FFB703",
 					"name": "Yellow"
+				},
+				{
+					"slug": "orange",
+					"color": "#FB8500",
+					"name": "Orange"
+				},
+				{
+					"slug": "grey-light",
+					"color": "#F3F5F6",
+					"name": "Grey Light"
+				},
+				{
+					"slug": "grey-medium",
+					"color": "#62656B",
+					"name": "Grey Medium"
 				}
 			]
 		},
@@ -48,36 +89,36 @@
 				"rowGap": "clamp(1.5rem, -1.0833rem + 4.1667vw, 2.25rem)"
 			},
 			"sizing": {
-				"narrow": "1280px",
-				"wide": "1660px"
+				"narrow": "960px",
+				"wide": "1280px"
 			},
 			"padding": {
 				"horizontal": "2.5rem"
 			},
 			"typography": {
 				"font-size": {
-					"heading-1": "clamp(2rem, 1.8750rem + 2.1875vw, 4.5rem)",
-					"heading-2": "clamp(1.625rem, 1.3125rem + 0.7813vw, 2.25rem)",
-					"heading-3": "clamp(1.375rem, 1.1875rem + 0.4688vw, 1.75rem)",
-					"heading-4": "clamp(1.0625rem, 1.0313rem + 0.0781vw, 1.125rem)",
-					"heading-5": "1rem",
-					"heading-6": "0.875rem",
-					"small": "1rem",
+					"heading-1": "3.75rem",
+					"heading-2": "2.5rem",
+					"heading-3": "2rem",
+					"heading-4": "1.625rem",
+					"heading-5": "1.375rem",
+					"heading-6": "1.1875rem",
+					"small": "0.875rem",
 					"medium": "1.125rem",
-					"large": "1.75rem",
-					"x-large": "clamp(1.75rem, 3vw, 2.25rem)"
+					"large": "1.375rem",
+					"x-large": "1.75rem"
 				},
 				"line-height": {
-					"heading-1": 1,
-					"heading-2": 1.2,
-					"heading-3": 1.2,
-					"heading-4": 1.2,
-					"heading-5": 1.2,
-					"heading-6": 1.2,
-					"small": 1.2,
-					"medium": 1.4,
-					"large": 1.4,
-					"x-large": 1.4
+					"heading-1": 1.4,
+					"heading-2": 1.4,
+					"heading-3": 1.4,
+					"heading-4": 1.4,
+					"heading-5": 1.4,
+					"heading-6": 1.4,
+					"small": 1.15,
+					"medium": 1.15,
+					"large": 1.3,
+					"x-large": 1.3
 				}
 			}
 		},
@@ -132,30 +173,224 @@
 			"dropCap": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "'Mooli'",
-					"name": "Mooli",
-					"slug": "mooli",
+					"fontFamily": "'Raleway', sans-serif",
+					"name": "Raleway",
+					"slug": "raleway",
 					"fontFace": [
 						{
-							"fontFamily": "'Mooli'",
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDr4fIB1Zyc61YBlG.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrcfIB1Zyc61YBlG.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrwfIB1Zyc61YBlG.woff2" ],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDr0fIB1Zyc61YBlG.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4WjMDrMfIB1Zyc61YA.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Raleway",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": [ "https://fonts.gstatic.com/s/mooli/v1/-F6_fjJpLyk1bbPGDm_6pClI.woff2" ],
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Raleway",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/raleway/v29/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2" ],
 							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
 						}
 					]
 				},
 				{
-					"fontFamily": "\"Inter var\"",
-					"name": "Inter Var",
-					"slug": "inter-var",
+					"fontFamily": "'Shippori Mincho B1', serif;",
+					"name": "Shippori Mincho B1",
+					"slug": "shippori-mincho-b1",
 					"fontFace": [
 						{
-							"fontFamily": "Inter Var",
-							"fontWeight": "400",
+							"fontFamily": "Shippori Mincho B1",
 							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/inter/Inter-upright-var.woff2" ]
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKeol_2XKgxn0Euw.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Shippori Mincho B1",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKeol_13Kgxn0Euw07.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Shippori Mincho B1",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKVo5_2XKgxn0Euw.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Shippori Mincho B1",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKVo5_13Kgxn0Euw07.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Shippori Mincho B1",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKMo9_2XKgxn0Euw.woff2" ],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Shippori Mincho B1",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/shipporiminchob1/v21/wXK1E2wCr44tulPdnn-xbIpJ9RgT9-nKMo9_13Kgxn0Euw07.woff2" ],
+							"unicodeRange": "U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF"
 						}
 					]
 				}
@@ -191,72 +426,108 @@
 	"styles": {
 		"blocks": {
 			"core/button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--raleway)"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--blue-medium)",
+					"background": "transparent"
+				},
 				"border": {
-					"radius": "0"
+					"width": "2px",
+					"radius": "40px",
+					"color": "var(--wp--preset--color--blue-medium)"
 				}
 			}
 		},
 		"color": {
 			"background": "var(--wp--preset--color--white)",
-			"text": "var(--wp--preset--color--black)"
+			"text": "var(--wp--preset--color--grey-medium)"
 		},
 		"elements": {
 			"h1": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--shippori-mincho-b-1)",
+					"fontWeight": "500",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-1)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-1)",
 					"letterSpacing": "0"
 				}
 			},
 			"h2": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--shippori-mincho-b-1)",
+					"fontWeight": "600",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-2)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-2)",
 					"letterSpacing": "0"
 				}
 			},
 			"h3": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--shippori-mincho-b-1)",
+					"fontWeight": "700",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-3)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-3)",
 					"letterSpacing": "0"
 				}
 			},
 			"h4": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--shippori-mincho-b-1)",
+					"fontWeight": "700",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-4)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-4)",
 					"letterSpacing": "0"
 				}
 			},
 			"h5": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--shippori-mincho-b-1)",
+					"fontWeight": "700",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-5)",
 					"fontSize": "var(--wp--custom--typography--font-size--heading-5)",
 					"letterSpacing": "0"
 				}
 			},
 			"h6": {
+				"color": {
+					"text": "var(--wp--preset--color--blue)"
+				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--mooli)",
-					"fontWeight": "400",
+					"fontFamily": "var(--wp--preset--font-family--raleway)",
+					"fontWeight": "600",
 					"lineHeight": "var(--wp--custom--typography--line-height--heading-6)",
-					"fontSize": "var(--wp--custom--typography--font-size--heading-6)"
+					"fontSize": "var(--wp--custom--typography--font-size--heading-6)",
+					"textTransform": "uppercase"
 				}
 			},
 			"link": {
 				"color": {
-					"text": "var(--wp--preset--color--black)"
+					"text": "var(--wp--preset--color--blue)"
+				},
+				"typography": {
+					"textDecoration": "none"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "underline"
+					}
 				}
 			}
 		},
@@ -264,7 +535,7 @@
 			"blockGap": "1.5rem"
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter-var)",
+			"fontFamily": "var(--wp--preset--font-family--raleway)",
 			"lineHeight": "var(--wp--custom--typography--line-height--medium)",
 			"fontSize": "var(--wp--preset--font-size--medium)"
 		}

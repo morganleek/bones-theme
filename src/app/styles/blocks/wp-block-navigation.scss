@@ -1,0 +1,33 @@
+.wp-block-navigation__responsive-container {
+}
+
+.wp-block-navigation__responsive-container-content {
+	gap: 20px;
+	.wp-block-navigation__container {
+		gap: 0;
+		.wp-block-navigation-item {
+			.wp-block-navigation-item__content {
+				font-size: 0.875rem;
+				padding: 10px 20px;
+				text-transform: uppercase;
+				letter-spacing: .025em;
+				font-weight: 500;
+				&:hover {
+					@media (hover: hover) {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.wp-block-buttons {
+		.wp-block-button {
+			.wp-block-button__link {
+				font-size: 0.875rem;
+				text-transform: uppercase;
+				letter-spacing: .025em;
+				font-weight: 500;
+			}
+		}
+	}
+}

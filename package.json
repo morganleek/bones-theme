@@ -4,8 +4,8 @@
   "private": true,
   "devDependencies": {
     "@wpackio/scripts": "^6.4.0",
-    "postcss": "^8.4.30",
-    "sass": "^1.68.0",
+    "postcss": "^8.4.33",
+    "sass": "^1.69.7",
     "url-loader": "^4.1.1"
   },
   "scripts": {
@@ -15,6 +15,7 @@
     "archive": "wpackio-scripts pack"
   },
   "dependencies": {
-    "@wpackio/entrypoint": "^6.4.0"
+    "@wpackio/entrypoint": "^6.4.0",
+    "gsap": "^3.12.4"
   }
 }

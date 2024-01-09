@@ -30,7 +30,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '0885af6aefbc29f083590db3467cf1b0c010cc28',
+    'reference' => '1393da940032a40104d5a85aa12d2b7ffe893c58',
     'name' => '__root__',
   ),
   'versions' => 
@@ -42,7 +42,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '0885af6aefbc29f083590db3467cf1b0c010cc28',
+      'reference' => '1393da940032a40104d5a85aa12d2b7ffe893c58',
     ),
     'wpackio/enqueue' => 
     array (
