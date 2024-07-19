@@ -1,56 +1,29 @@
-// h1,
-// h2 {
-// }
-// h3 {
-// 	margin-top: 0.5em;
-// 	margin-bottom: 0.5em;
-// }
-// h4 {
-// 	margin-top: 0.5em;
-// 	margin-bottom: 0.5em;
-// }
-// h5 {
-// 	margin-top: 0.5em;
-// 	margin-bottom: 0.5em;
-// }
-
 // h1, h2, h3, h4, h5, h6 {
-// 	&.is-hidden {
-// 		opacity: 0;
-// 	}
 // }
 
-// .has-large-font-size,
-// .has-x-large-font-size {
-// 	strong {
-// 		font-weight: 500;
-// 	}
-// }
+.has-x-large-font-size {
+	line-height: var(--wp--custom--line-height--x-large);
+}
+.has-large-font-size {
+	line-height: var(--wp--custom--line-height--large);
+}
+.has-small-font-size {
+	line-height: var(--wp--custom--line-height--small);
+}
 
-// p {
-// 	letter-spacing: 0;
-// 	margin-top: 1.4em;
-// 	margin-bottom: 1.4em;
-// 	.has-large-font-size,
-// 	&.has-large-font-size {
-// 		line-height: 1.05em;
-// 		margin-top: 0.7em;
-// 		margin-bottom: 0.7em;
-// 	}
-// 	.has-extra-large-font-size,
-// 	&.has-extra-large-font-size {
-//     margin-top: 0.35em;
-//     margin-bottom: 0.35em;
-// 	}
-// }
-
-
-// * {
-// 	&:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-// 		strong {
-// 			// @font-face with custom weights
-// 			// font-family: var(--wp--preset--font-family--geometric-slab-bold);
-// 			// font-weight: normal;
-// 		}
-// 	}
-// }
+@for $i from 1 through 6 {
+	h#{$i} {
+		&.has-x-large-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 1.3) !important;
+		}
+		&.has-large-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 1.15) !important;
+		}
+		&.has-medium-font-size {
+			font-size: var(--wp--custom--font-size--heading-#{$i}) !important;
+		}
+		&.has-small-font-size {
+			font-size: calc(var(--wp--custom--font-size--heading-#{$i}) * 0.85) !important;
+		}	
+	}
+}

@@ -1,31 +1,26 @@
 {
-  "app/assets/menu-background@2x.jpg": "app/assets/menu-background@2x-75f8bff6.jpg",
-  "main.css": "app/main-9136ad43.css",
-  "main.css.map": "app/main-9136ad43.css.map",
-  "main.js": "app/main-4d53f892.js",
-  "main.js.map": "app/main-4d53f892.js.map",
+  "main.css": "app/main-168857d5.css",
+  "main.css.map": "app/main-168857d5.css.map",
+  "main.js": "app/main-e3ef0c08.js",
+  "main.js.map": "app/main-e3ef0c08.js.map",
   "runtime.js": "app/runtime-c339366b.js",
   "runtime.js.map": "app/runtime-c339366b.js.map",
-  "vendors~main.js": "app/vendors~main-498bb5d5.js",
-  "vendors~main.js.map": "app/vendors~main-498bb5d5.js.map",
   "wpackioEp": {
     "main": {
       "assets": {
         "js": [
           "app/runtime-c339366b.js",
-          "app/vendors~main-498bb5d5.js",
-          "app/main-4d53f892.js"
+          "app/main-e3ef0c08.js"
         ],
         "js.map": [
           "app/runtime-c339366b.js.map",
-          "app/vendors~main-498bb5d5.js.map",
-          "app/main-4d53f892.js.map"
+          "app/main-e3ef0c08.js.map"
         ],
         "css": [
-          "app/main-9136ad43.css"
+          "app/main-168857d5.css"
         ],
         "css.map": [
-          "app/main-9136ad43.css.map"
+          "app/main-168857d5.css.map"
         ]
       }
     }

@@ -1,16 +1,5 @@
 header {
 	&.wp-block-template-part {
-		// position: sticky;
-		// top: 0;
-		// left: 0;
-		// right: 0;
-		// z-index: 999;
-		// body.home & {
-		// 	position: fixed;
-		// }
-		// body.admin-bar & {
-		// 	top: 32px;
-		// }
 		& > .wp-block-group {
 			padding-left: var(--wp--custom--spacing--outer);
 			padding-right: var(--wp--custom--spacing--outer);
