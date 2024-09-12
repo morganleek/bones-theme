@@ -1,27 +1,2 @@
-.wp-block-gallery {
-	// .wp-block-image {}
-	// .blocks-gallery-caption {}
-	&.tns-slider {
-		margin-left: 0;
-	}
-	&.is-style-gallery-slider:not(.tns-slider) {
-		
-		&:not(.is-selected):not(.has-child-selected) {
-			figure {
-				&:not(:first-child) {
-					display: none;
-				}
-			}
-		}
-	}
-	.tns-outer .tns-ovh .tns-inner & {
-		gap: 0;
-		figure.tns-item {
-			img {
-				width: 100%;
-				height: auto;
-				display: block;
-			}
-		}
-	}
-}
+// .wp-block-gallery {
+// }

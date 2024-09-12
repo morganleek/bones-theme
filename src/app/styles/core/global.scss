@@ -15,12 +15,12 @@ html {
 	}
 }
 
-:where(.wp-block-group.has-background) {
-	padding: 1.25em var(--wp--custom--spacing--outer);
-	// @media (min-width: 650px) {
-	// 	padding: 1.25em 2.375em;
-	// }
-}
+// :where(.wp-block-group.has-background) {
+// 	padding: 1.25em var(--wp--custom--spacing--outer);
+// 	// @media (min-width: 650px) {
+// 	// 	padding: 1.25em 2.375em;
+// 	// }
+// }
 
 img {
 	&[loading="lazy"] {

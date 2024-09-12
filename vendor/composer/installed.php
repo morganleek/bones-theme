@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '1393da940032a40104d5a85aa12d2b7ffe893c58',
+    'reference' => '4b68b0dc45879be25d662f7c83cba62226a76d3d',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '1393da940032a40104d5a85aa12d2b7ffe893c58',
+      'reference' => '4b68b0dc45879be25d662f7c83cba62226a76d3d',
     ),
     'wpackio/enqueue' => 
     array (
