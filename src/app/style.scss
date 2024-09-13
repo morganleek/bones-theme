@@ -3,6 +3,7 @@
 @use './styles/core/global';
 @use './styles/core/editor';
 @use './styles/core/type';
+@use './styles/layout/main';
 @use './styles/layout/header';
-@use './styles/blocks/blocks';
 @use './styles/layout/footer';
+@use './styles/blocks/blocks';

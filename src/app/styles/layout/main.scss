@@ -1,0 +1,7 @@
+main {
+	&::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+}
