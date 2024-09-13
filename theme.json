@@ -3,6 +3,9 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"defaultDuotone": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
 			"duotone": [],
 			"gradients": [
 				{
@@ -107,7 +110,7 @@
 			"wideSize": "1200px"
 		},
 		"spacing": {
-			"defaultSpacingSizes": false,
+			"defaultSpacingSizes": true,
 			"spacingSizes": [
 				{
 					"name": "1",
