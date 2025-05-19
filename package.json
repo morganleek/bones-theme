@@ -1,21 +1,25 @@
 {
   "name": "bones-theme",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Vite version",
+  "main": "index.js",
   "devDependencies": {
-    "@wpackio/scripts": "^6.4.0",
-    "postcss": "^8.4.45",
-    "sass": "^1.78.0",
-    "url-loader": "^4.1.1"
+    "sass": "^1.89.0",
+    "vite": "^6.3.5"
   },
   "scripts": {
-    "bootstrap": "wpackio-scripts bootstrap",
-    "build": "wpackio-scripts build",
-    "start": "wpackio-scripts start",
-    "archive": "wpackio-scripts pack"
+    "start": "vite build --watch",
+    "dev": "vite",
+    "build": "vite build"
   },
-  "dependencies": {
-    "@wpackio/entrypoint": "^6.4.0",
-    "gsap": "^3.12.4"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganleek/bones-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morganleek/bones-theme/issues"
+  },
+  "homepage": "https://github.com/morganleek/bones-theme#readme"
 }

@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('img[loading="lazy"]').forEach(e=>{e.complete===!0&&e.classList.add("has-loaded"),e.addEventListener("load",a=>{a.target.classList.add("has-loaded")})}),document.querySelectorAll(".copyright").forEach(e=>{e.innerHTML=e.innerHTML.replace("{YEAR}",new Date().getUTCFullYear())})});
