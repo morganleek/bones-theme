@@ -1,4 +1,9 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Kucrut\Vite;
+
+
 // Other functions
 // require get_template_directory() . '/inc/block-patterns.php';
 // WEI Images tools
@@ -31,27 +36,39 @@ class BoneThemeInit
 	}
 
 	public function bones_theme_plugin_enqueue() {
-		
-    $manifestPath = get_theme_file_path('dist/app/.vite/manifest.json');
+		Vite\enqueue_asset(
+		__DIR__ . '/dist/app',
+		'src/app/index.js',
+		[
+			'handle' => 'bones-theme',
+			'dependencies' => [ 'wp-components' ], // Optional script dependencies. Defaults to empty array.
+			'css-dependencies' => [ 'wp-components' ], // Optional style dependencies. Defaults to empty array.
+			'css-media' => 'all', // Optional.
+			'css-only' => false, // Optional. Set to true to only load style assets in production mode.
+			'in-footer' => true, // Optional. Defaults to false.
+		]
+	);
 
-		// Check if the manifest file exists and is readable before using it
-		if( file_exists( $manifestPath ) ) {
-			$manifest = json_decode( file_get_contents( $manifestPath ), true );
+    // $manifestPath = get_theme_file_path('dist/app/.vite/manifest.json');
+
+		// // Check if the manifest file exists and is readable before using it
+		// if( file_exists( $manifestPath ) ) {
+		// 	$manifest = json_decode( file_get_contents( $manifestPath ), true );
 			
-			// Check if the file is in the manifest before enqueuing
-			if( isset( $manifest['src/app/index.js'] ) ) {
-				// index.js
-				wp_enqueue_script( 
-					'bones-theme', 
-					get_theme_file_uri( 'dist/app/' . $manifest['src/app/index.js']['file'] )
-				);
-				// style.css
-				wp_enqueue_style(
-					'bones-theme', 
-					get_theme_file_uri( 'dist/app/' . $manifest['src/app/index.js']['css'][0] )
-				);
-			}
-		}
+		// 	// Check if the file is in the manifest before enqueuing
+		// 	if( isset( $manifest['src/app/index.js'] ) ) {
+		// 		// index.js
+		// 		wp_enqueue_script( 
+		// 			'bones-theme', 
+		// 			get_theme_file_uri( 'dist/app/' . $manifest['src/app/index.js']['file'] )
+		// 		);
+		// 		// style.css
+		// 		wp_enqueue_style(
+		// 			'bones-theme', 
+		// 			get_theme_file_uri( 'dist/app/' . $manifest['src/app/index.js']['css'][0] )
+		// 		);
+		// 	}
+		// }
 
 		// Inline styles for fonts
 		// wp_add_inline_style( 'bones-theme-style', $this->bones_theme_get_font_face_styles() );
