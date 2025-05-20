@@ -1,0 +1,11 @@
+# OSX
+.DS_Store
+
+# Node Modules
+node_modules/
+
+# Src
+src/
+
+vite.config.js
+README.md
