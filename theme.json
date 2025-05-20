@@ -49,16 +49,16 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "\"Open Sans\"",
+							"fontFamily": "\"Archivo Narrow\"",
 							"fontStyle": "normal",
-							"fontWeight": "300 800",
+							"fontWeight": "400",
 							"fontStretch": "100%",
-							"fontDisplay": "swap"
+							"src": "file:./assets/fonts/ArchivoNarrow-Regular.woff2"
 						}
 					],
-					"fontFamily": "\"Open Sans\", sans-serif",
-					"name": "Open Sans",
-					"slug": "open-sans"
+					"fontFamily": "\"Archivo Narrow\", sans-serif",
+					"name": "Archivo Narrow",
+					"slug": "archivo-narrow"
 				}
 			]
 		},
@@ -75,7 +75,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--open-sans)"
+			"fontFamily": "var(--wp--preset--font-family--archivo-narrow)"
 		}
 	},
 	"templateParts": [
