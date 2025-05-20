@@ -50,9 +50,9 @@
 					"fontFace": [
 						{
 							"fontFamily": "\"Archivo Narrow\"",
+							"fontStretch": "100%",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"fontStretch": "100%",
 							"src": "file:./assets/fonts/ArchivoNarrow-Regular.woff2"
 						}
 					],
@@ -91,5 +91,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
 }

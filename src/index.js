@@ -5,8 +5,6 @@ import './style.scss';
 // import { tns } from "tiny-slider"
 
 document.addEventListener('DOMContentLoaded', () => {
-	console.log( "Hello Bones Theme!" );
-	
 	// Lazy load fade in
 	document.querySelectorAll( 'img[loading="lazy"]' ).forEach( ( img ) => {
 		if( img.complete === true ) {

@@ -15,9 +15,14 @@
 
 	// Actions
 	add_action( 'wp_head', 'bones_theme_js_data_object', 5 );
-	add_action( 'wp_head', 'bones_theme_load_favicons' );
-	add_action( 'current_screen', 'bones_theme_add_editor_styles' );
+	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
+	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
 	// add_action( 'wp_head', 'theme_fonts', 20 );
+
+	// Frontend Actions
+	if ( ! is_admin() ) {
+		add_action( 'render_block', 'bones_theme_render_block', 5, 2 );
+	}
 
 	// Entry Points
 	function bones_theme_entry_points(): array {
@@ -39,6 +44,24 @@
 	// Favicons
 	function bones_theme_load_favicons() {
 		print '<link rel="icon" href="' . get_theme_file_uri( 'assets/favicon/favicon.svg' ) . '" type="image/svg+xml">';
+	}
+
+	// Block greps
+	function bones_theme_render_block( $block_content, $block ) {
+		// Copyright Year
+		if( $block['blockName'] === "core/paragraph" ) {
+			$year_regex = "/({YEAR})/i";
+			$block_content = preg_replace( $year_regex, date('Y'), $block_content );
+		}
+
+		// Change Hamburger
+		// if( $block['blockName'] === "core/navigation" ) {
+		// 	$svg_regex = "/<svg.*?\/svg>/i";
+		// 	$svg = '<svg class="open" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21M3 6H21M9 18H21" stroke="#38332F" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg><svg class="close" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 2L2 22M2 2L22 22" stroke="#38332F" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/></svg>';
+		// 	$block_content = preg_replace( $svg_regex, $svg, $block_content );
+		// }
+
+		return $block_content;
 	}
 
 	// Fonts
