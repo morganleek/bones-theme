@@ -14,7 +14,8 @@
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 
 	// Actions
-	add_action( 'wp_head', 'theme_output_js_data', 5 );
+	add_action( 'wp_head', 'bones_theme_js_data_object', 5 );
+	add_action( 'wp_head', 'bones_theme_load_favicons' );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles' );
 	// add_action( 'wp_head', 'theme_fonts', 20 );
 
@@ -27,12 +28,17 @@
 	}
 
 	// Inline Data
-	function theme_output_js_data() {
+	function bones_theme_js_data_object() {
 		$data = [ 
 			'ajax_url' => admin_url( 'admin-ajax.php' ),
 		];
 
 		print "<script type=\"text/javascript\">const phpData = " . wp_json_encode( $data ) . ";</script>";
+	}
+
+	// Favicons
+	function bones_theme_load_favicons() {
+		print '<link rel="icon" href="' . get_theme_file_uri( 'assets/favicon/favicon.svg' ) . '" type="image/svg+xml">';
 	}
 
 	// Fonts
