@@ -23,11 +23,8 @@ npm start
 npm run build
 ```
 
-### Deploy
-TODO
-
 ### Git FTP
-TODO: Set Git FTP settings with 'syncroot' pointing at packages directory. You may need to export any templates if these have been edited in WP.
+Set Git FTP settings. You may want to export any templates if these have been edited in WP.
 
 ```
 [git-ftp]
@@ -35,5 +32,4 @@ TODO: Set Git FTP settings with 'syncroot' pointing at packages directory. You m
         user = "username"
         password = "password"
         insecure = 1
-        syncroot = package/{directory_name}
 ```
