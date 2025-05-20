@@ -1,26 +1,21 @@
 # Bones Theme
-An empty framework to build Wordpress themes with Gutenberg using WPack.io for tooling. 
-
-For more information on development setup see [wpack.io](https://wpack.io/).
+An empty Wordpress theme using Vite for comilation and BrowserSync for hot updates.
 
 ## Setup
 
 ```bash
-npx @wpackio/cli
-npm run bootstrap
-composer require wpackio/enqueue
+npm install
 ```
 
-#### In ```wpackio.server.js```
-- Set a ```proxy``` value to your local URL *http://localhost:8888*
-- Set ```host``` to your server's IP address if working remotely
+#### In ```functions.php```
+- Set ```PROXY_SOURCE``` in .evn *https://localhost:8888*
 
-#### In ```wpackio.project.js``` to reflect the directory of your 
-- Update ```slug``` value theme directory name *bt-folder-name*
+#### In ```frontend-config.json``` to reflect the directory of your 
+- Update ```themeFolder``` value theme directory name *bt-folder-name*
 
 ### Development 
 ```bash
-npm run start
+npm start
 ```
 
 ### Build
@@ -29,12 +24,10 @@ npm run build
 ```
 
 ### Deploy
-```bash
-npm run archive
-```
+TODO
 
 ### Git FTP
-Set Git FTP settings with 'syncroot' pointing at packages directory. You may need to export any templates if these have been edited in WP.
+TODO: Set Git FTP settings with 'syncroot' pointing at packages directory. You may need to export any templates if these have been edited in WP.
 
 ```
 [git-ftp]

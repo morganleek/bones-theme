@@ -1,9 +1,12 @@
+import 'vite/modulepreload-polyfill';
 import './style.scss';
 
 // Slider - Library import example
 // import { tns } from "tiny-slider"
 
-document.addEventListener( 'DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
+	console.log( "Hello Bones Theme!" );
+	
 	// Lazy load fade in
 	document.querySelectorAll( 'img[loading="lazy"]' ).forEach( ( img ) => {
 		if( img.complete === true ) {
@@ -18,4 +21,4 @@ document.addEventListener( 'DOMContentLoaded', () => {
 	document.querySelectorAll(".copyright").forEach( ( p ) => { 
 		p.innerHTML = p.innerHTML.replace( '{YEAR}', new Date().getUTCFullYear() );
 	} );
-} );
+});

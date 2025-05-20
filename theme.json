@@ -51,34 +51,9 @@
 						{
 							"fontFamily": "\"Open Sans\"",
 							"fontStyle": "normal",
-							"fontWeight": "700",
-							"src": [
-								"file:./assets/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4iY1M2xLER.woff2"
-							]
-						},
-						{
-							"fontFamily": "\"Open Sans\"",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4iY1M2xLER.woff2"
-							]
-						},
-						{
-							"fontFamily": "\"Open Sans\"",
-							"fontStyle": "normal",
-							"fontWeight": "800",
-							"src": [
-								"file:./assets/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1y4iY1M2xLER.woff2"
-							]
-						},
-						{
-							"fontFamily": "\"Open Sans\"",
-							"fontStyle": "italic",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkaVIUwaERZjA.woff2"
-							]
+							"fontWeight": "300 800",
+							"fontStretch": "100%",
+							"fontDisplay": "swap"
 						}
 					],
 					"fontFamily": "\"Open Sans\", sans-serif",
@@ -90,7 +65,7 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
-		"css": "main > .wp-block-group::after {\n  content: '';\n  display: block;\n  clear: both;\n}\n",
+		"css": "",
 		"spacing": {
 			"padding": {
 				"bottom": "0px",
