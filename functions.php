@@ -80,7 +80,7 @@
 
 	// Load Editor Styles
 	function bones_theme_add_editor_styles( WP_Screen $screen ) {
-		if ( $screen->base !== 'post' ) {
+		if ( $screen->base !== 'post' && $screen->base !== 'site-editor' ) {
 			return;
 		}
 		
