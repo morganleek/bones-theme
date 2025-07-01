@@ -18,11 +18,17 @@
 	add_action( 'wp_head', 'bones_theme_js_data_object', 5 );
 	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
+	add_action( 'init', 'bones_theme_init', 0 );
 	// add_action( 'wp_head', 'theme_fonts', 20 );
 
 	// Frontend Actions
 	if ( ! is_admin() ) {
 		add_action( 'render_block', 'bones_theme_render_block', 5, 2 );
+	}
+
+	function bones_theme_init() {
+		// Hide default WP patters
+		remove_theme_support('core-block-patterns');
 	}
 
 	// Entry Points
