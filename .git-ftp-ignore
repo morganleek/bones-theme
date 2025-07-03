@@ -1,3 +1,16 @@
+.gitignore
+*/.gitignore      # ignore files in sub directories
+*/.gitkeep
+.git-ftp-ignore
+.git-ftp-include
+.gitlab-ci.yml
+
+.env
+.editorconfig
+
+package.json
+package-lock.json
+
 # OSX
 .DS_Store
 
@@ -5,7 +18,7 @@
 node_modules/
 
 # Src
-src/
+src/*
 
 vite.config.js
 README.md
