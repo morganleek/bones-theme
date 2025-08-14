@@ -1,5 +1,5 @@
 # Bones Theme
-An empty Wordpress theme using Vite for comilation and BrowserSync for hot updates.
+An empty Wordpress theme using Vite for compilation and BrowserSync for live updates.
 
 ## Setup
 
