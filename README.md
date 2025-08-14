@@ -7,7 +7,7 @@ An empty Wordpress theme using Vite for comilation and BrowserSync for hot updat
 npm install
 ```
 
-#### In ```functions.php```
+#### In ```.env```
 - Set ```PROXY_SOURCE``` in .evn *https://localhost:8888*
 
 #### In ```frontend-config.json``` to reflect the directory of your 

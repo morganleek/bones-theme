@@ -57,7 +57,7 @@ export default defineConfig(({ mode }) => {
             VitePluginBrowserSync({
                 dev: {
                     bs: {
-                        //port: 3000, // default is 3000, change if you have conflicts
+                        port: 3001, // default is 3000, change if you have conflicts
                         proxy: {
                             target: env.PROXY_SOURCE, // host from local server when WP is running, stored in .env file
                             proxyReq: [ // set header to check dev mode on WP side
