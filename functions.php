@@ -15,6 +15,7 @@
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 
 	// Actions
+	add_action( 'init', 'bones_name_register_block_styles', 100 );
 	add_action( 'wp_head', 'bones_theme_js_data_object', 5 );
 	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
@@ -101,4 +102,12 @@
 			// phpcs:ignore WordPress.PHP.DevelopmentFunctions -- intentional trigger_error for admin area
 			trigger_error( $e->getMessage(), E_USER_WARNING );// don't break the entire admin page
 		}
+	}
+
+	// Custom Block Types
+	function bones_name_register_block_styles() {
+		register_block_style( 'core/image', [
+			'name' => 'special-appearance',
+			'label' => __( 'Special', 'bones_name' ),
+		] );
 	}
