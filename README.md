@@ -8,7 +8,7 @@ npm install
 ```
 
 #### In ```.env```
-- Set ```PROXY_SOURCE``` in .evn *https://localhost:8888*
+- Set ```PROXY_SOURCE``` in .env *https://localhost:8888*
 
 #### In ```frontend-config.json``` to reflect the directory of your 
 - Update ```themeFolder``` value theme directory name *bt-folder-name*
