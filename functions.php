@@ -20,7 +20,7 @@
 	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
 	add_action( 'init', 'bones_theme_init', 0 );
-	// add_action( 'wp_head', 'theme_fonts', 20 );
+	// add_action( 'enqueue_block_assets', 'theme_fonts', 20 );
 
 	// Frontend Actions
 	if ( ! is_admin() ) {
@@ -73,10 +73,9 @@
 	}
 
 	// Fonts
+  // 'font-end-fonts' - Loads for front end and editor
 	// function theme_fonts() {
-	// 	print '<link rel="preconnect" href="https://fonts.googleapis.com">';
-	// 	print '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-	// 	print '<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">';
+  //  wp_enqueue_style( 'font-end-fonts', 'https://use.typekit.net/abcdefg.css', [], '1.0.0' );
 	// }
 
 	// Load Editor Styles
