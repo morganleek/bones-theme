@@ -53,13 +53,19 @@ export default defineConfig(({ mode }) => {
             // in css in dev mode. With `host: true` replace localhost with external ip
             origin: `http://localhost:${config.viteServerPort}`,
         },
+        ui: {
+            port: config.browserSyncUIPort // BrowserSync UI port
+        },
         plugins: [
             VitePluginBrowserSync({
                 dev: {
                     bs: {
-                        port: 3001, // default is 3000, change if you have conflicts
+                        port: config.browserSyncPort, // default is 3000, change if you have conflicts
+                        ui: {
+                            port: config.browserSyncUIPort // BrowserSync UI port
+                        },
                         proxy: {
-                            target: env.PROXY_SOURCE, // host from local server when WP is running, stored in .env file
+                            target: config.proxySource, // host from local server when WP is running, stored in .env file
                             proxyReq: [ // set header to check dev mode on WP side
                                 function (proxyReq) {
                                     proxyReq.setHeader(config.devModeProxyHeader, "1"); // value is not important
