@@ -19,7 +19,8 @@
     "start": "node --no-deprecation node_modules/.bin/vite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:stylelint": "stylelint \"src/**/*.{css,scss}\"",
-    "lint:stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix"
+    "lint:stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,scss,css}\""
   },
   "repository": {
     "type": "git",
