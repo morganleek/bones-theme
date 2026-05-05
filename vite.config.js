@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import VitePluginBrowserSync from 'vite-plugin-browser-sync' // https://github.com/Applelo/vite-plugin-browser-sync
+import { wpThemeVarsPlugin } from './vite-plugin-wp-theme-vars.js'
 
 // shared config for js and php. `config.themeFolder` - it's possible to get themeFolder from process.cwd() but in some
 // cases (like Docker) theme folder name in project is not the same as folder name inside WP, so themeFolder is in config.
@@ -57,6 +58,7 @@ export default defineConfig(({ mode }) => {
             port: config.browserSyncUIPort // BrowserSync UI port
         },
         plugins: [
+            wpThemeVarsPlugin(),
             {
                 name: 'socket-logger',
                 configureServer(server) {
@@ -106,7 +108,7 @@ export default defineConfig(({ mode }) => {
         },
         // strip comments from imported packages (~5-10kb), 'external' and 'linked' options don't work
         // https://github.innominds.com/vitejs/vite/discussions/5329
-        esbuild: {legalComments: 'none'},
+        esbuild: { legalComments: 'none' },
         resolve: {
             alias: {
                 '@': resolve(__dirname, 'src'),

@@ -18,6 +18,9 @@ npm install
 npm start
 ```
 
+#### CSS Autocomplete 
+Ensure `CSS Var Complete` is installed in VSCode
+
 ### Build
 ```bash
 npm run build

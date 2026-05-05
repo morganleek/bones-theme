@@ -19,6 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
 	document.querySelectorAll(".copyright").forEach((p) => {
 		p.innerHTML = p.innerHTML.replace('{YEAR}', new Date().getUTCFullYear());
 	});
-
-	console.log("hello world");
 });
