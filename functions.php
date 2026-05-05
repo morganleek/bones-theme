@@ -110,3 +110,17 @@
 			'label' => __( 'Special', 'bones_name' ),
 		] );
 	}
+
+	// Customer ordering using `menu_order` in Blocks
+	// function custom_query_order( $query ) {
+	// 	// List supported post types
+	// 	$allowed = [
+	// 		"event"
+	// 	];
+	// 	if ( !is_admin() && isset( $query->query_vars['post_type']) && in_array( $query->query_vars['post_type'], $allowed ) ) {
+	// 		$query->set( 'orderby', 'menu_order' );
+	// 		$query->set( 'order', 'ASC' );
+	// 	}
+	// }
+
+	// add_action( 'pre_get_posts', 'custom_query_order' );

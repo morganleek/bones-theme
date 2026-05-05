@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => {
         build: {
             outDir: resolve(__dirname, `./${config.distFolder}`),
             manifest: true, // need for wordpress to enqueue files (option works only for prod build)
-            target: 'modules', // esbuild target, same as .browserslistrc
+            target: ['es2015', 'edge88', 'firefox78', 'chrome87', 'safari14'], // native ES modules support
             rollupOptions: {
                 input: {
                     // Object keys are arbitrary, but they will be used in the names of the compiled chunks. Paths

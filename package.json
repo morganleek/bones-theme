@@ -5,10 +5,10 @@
   "main": "src/app/index.js",
   "type": "module",
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
-    "sass": "^1.71.1",
-    "vite": "^6.3.5",
-    "vite-plugin-browser-sync": "^4.0.0"
+    "autoprefixer": "^10.5.0",
+    "sass": "^1.99.0",
+    "vite": "^8.0.10",
+    "vite-plugin-browser-sync": "^7.0.0"
   },
   "dependencies": {
   },
