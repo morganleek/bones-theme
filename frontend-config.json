@@ -3,6 +3,7 @@
   "distFolder": "dist",
   "proxySource": "https://wp.1fo.au",
   "browserSyncPort": 3000,
+  "browserSyncSocket": 3001,
   "browserSyncUIPort": 3002,
   "viteServerPort": 3005,
   "devModeProxyHeader": "X-BS-Proxy"

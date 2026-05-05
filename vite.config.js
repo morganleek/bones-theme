@@ -57,6 +57,14 @@ export default defineConfig(({ mode }) => {
             port: config.browserSyncUIPort // BrowserSync UI port
         },
         plugins: [
+            {
+                name: 'socket-logger',
+                configureServer(server) {
+                    server.httpServer?.once('listening', () => {
+                        console.log(`\nSocket: https://localhost:${config.browserSyncSocket}\n`);
+                    });
+                }
+            },
             VitePluginBrowserSync({
                 dev: {
                     bs: {
