@@ -1,0 +1,20 @@
+{
+    "remote.portsAttributes": {
+        "3000": {
+            "label": "BrowserSync",
+            "onAutoForward": "openBrowser"
+        },
+        "3001": {
+            "label": "BrowserSync Socket",
+            "onAutoForward": "silent"
+        },
+        "3002": {
+            "label": "BrowserSync UI",
+            "onAutoForward": "silent"
+        },
+        "3005": {
+            "label": "Vite Dev Server",
+            "onAutoForward": "silent"
+        }
+    }
+}

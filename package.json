@@ -6,16 +6,20 @@
   "type": "module",
   "devDependencies": {
     "autoprefixer": "^10.5.0",
+    "prettier": "^3.8.3",
     "sass": "^1.99.0",
+    "stylelint": "^17.10.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-prettier": "^5.0.3",
     "vite": "^8.0.10",
     "vite-plugin-browser-sync": "^7.0.0"
   },
-  "dependencies": {
-  },
   "scripts": {
     "build": "vite build",
-    "start": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --no-deprecation node_modules/.bin/vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:stylelint": "stylelint \"src/**/*.{css,scss}\"",
+    "lint:stylelint:fix": "stylelint \"src/**/*.{css,scss}\" --fix"
   },
   "repository": {
     "type": "git",
