@@ -23,9 +23,9 @@ html {
 // }
 
 img {
+	transition: opacity 0.2s;
 	&[loading="lazy"] {
 		opacity: 0;
-		transition: opacity 0.2s;
 	}
 
 	&.has-loaded {
