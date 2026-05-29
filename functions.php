@@ -10,6 +10,7 @@
 	require get_template_directory() . '/inc/vite-assets.php'; // vite-related functions
 	require get_template_directory() . '/inc/tools.php';
 	require get_template_directory() . '/inc/block-patterns.php';
+	require get_template_directory() . '/blocks/blocks.php';
 
 	// Declutter
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
