@@ -18,9 +18,9 @@
 	justify-content: center;
 	z-index: 99;
 	min-height: 44px;
-	@media (min-width: 1280px) { 
-		min-height: 94px;
-	}
+	// @media (min-width: 1280px) { 
+	// 	min-height: 94px;
+	// }
 	.toggle-search {
 		border: 0 none;
 		padding: 0;
@@ -29,7 +29,8 @@
 		background: transparent;
 		position: relative;
 		top: 2px;
-		transition: opacity 2s;
+		transition: opacity 0.6s;
+		z-index: 1000;
 		@media(hover: hover) {
 			&:hover {
 				opacity: 0.7;
@@ -41,9 +42,15 @@
 		top: -8px;
 		right: 0; 
 		z-index: 999;
-    animation: fadeIn 2s ease;
-		width: min(calc(100vw - 140px), 418px); 
+    width: 0;
 		overflow-x: hidden;
+		opacity: 0;
+		transition: all 0.6s ease-out;
+		&.is-visible {
+			width: min(calc(100vw - 140px), 418px); 
+			opacity: 1; 
+			transition: all 0.6s ease-in;
+		}
 		&.in-search {
 			.top::after {
 				opacity: 1;
@@ -53,10 +60,10 @@
 			--search--height: 60px;
 			position: relative;
 			height: var(--search--height);
-			transition: height 2s;
-			@media (min-width: 1280px) { 
-				--search--height: 110px;
-			}
+			transition: height 0.6s;
+			// @media (min-width: 1280px) { 
+			// 	--search--height: 110px;
+			// }
 			&::after {
 				content: "";
 				position: absolute;
@@ -64,9 +71,9 @@
 				left: 0;
 				right: 0;
 				bottom: -1px;
-				animation: gradient 2s ease infinite;
+				animation: gradient 0.6s ease infinite;
 				opacity: 0;
-				transition: all 2s;
+				transition: all 0.6s;
 			}
 			form {
 				display: grid;
@@ -112,6 +119,8 @@
 			background: #ffffff;
 			border-radius: 0 0 1rem 1rem;
 			width: min(calc(100vw - 140px), 418px); 
+			border: 2px solid #f0f0f0;
+			border-top: 0 none;
 			& > p {
 				margin: 0;
 				font-size: 0.875rem;
@@ -155,7 +164,7 @@
 					}
 					h6 {
 						margin: 0;
-						transition: color 2s;
+						transition: color 0.6s;
 					}
 					img {
 						aspect-ratio: 1.353;
