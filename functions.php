@@ -21,7 +21,7 @@
 	add_action( 'wp_head', 'bones_theme_load_favicons', 20 );
 	add_action( 'current_screen', 'bones_theme_add_editor_styles', 20 );
 	add_action( 'init', 'bones_theme_init', 0 );
-	// add_action( 'enqueue_block_assets', 'theme_fonts', 20 );
+	add_action( 'enqueue_block_assets', 'theme_fonts', 20 );
 
 	// Frontend Actions
 	if ( ! is_admin() ) {
@@ -73,11 +73,14 @@
 		return $block_content;
 	}
 
+	
 	// Fonts
   // 'font-end-fonts' - Loads for front end and editor
-	// function theme_fonts() {
-  //  wp_enqueue_style( 'font-end-fonts', 'https://use.typekit.net/abcdefg.css', [], '1.0.0' );
-	// }
+	function theme_fonts() {
+		print "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">";
+		print "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>";
+		print "<link href=\"https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap\" rel=\"stylesheet\">";
+	}
 
 	// Load Editor Styles
 	function bones_theme_add_editor_styles( WP_Screen $screen ) {
@@ -85,6 +88,8 @@
 			return;
 		}
 		
+		add_editor_style( "https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" );
+
 		$main_entry = 'src/index.js';
 
 		try {
