@@ -7,11 +7,9 @@ An empty Wordpress theme using Vite for compilation and BrowserSync for live upd
 npm install
 ```
 
-#### In ```.env```
-- Set ```PROXY_SOURCE``` in .env *https://localhost:8888*
-
 #### In ```frontend-config.json``` to reflect the directory of your 
 - Update ```themeFolder``` value theme directory name *bt-folder-name*
+- Update ```proxySource``` value to server's URL
 
 ### Development 
 ```bash
