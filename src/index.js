@@ -1,16 +1,25 @@
 import 'vite/modulepreload-polyfill';
+// import './js/live-load.js';
 import './style.scss';
 
 // Slider - Library import example
 // import { tns } from "tiny-slider"
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { DOMContentLoaded(); } );
+document.addEventListener('DOMContentUpdated', () => { 
+	console.log( "DOMContentUpdated" );
+	DOMContentLoaded(); 
+} );
 
+const DOMContentLoaded = () => {
+	console.log( "loaded" );
 	// Copyright Year
 	document.querySelectorAll(".copyright").forEach((p) => {
 		p.innerHTML = p.innerHTML.replace('{YEAR}', new Date().getUTCFullYear());
 	});
-});
+
+	document.querySelectorAll('img').forEach(attachLoadListener);
+}
 
 //
 // Lazy Loading including items loaded via `fetch`
@@ -58,7 +67,7 @@ window.fetch = async function (...args) {
 };
 
 // Catch any <img> tags already in the DOM at init time
-document.querySelectorAll('img').forEach(attachLoadListener);
+// document.querySelectorAll('img').forEach(attachLoadListener);
 
 // --- Helpers ---
 

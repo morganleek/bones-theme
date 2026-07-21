@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/morganleek/bones-theme/issues"
   },
-  "homepage": "https://github.com/morganleek/bones-theme#readme"
+  "homepage": "https://github.com/morganleek/bones-theme#readme",
+  "dependencies": {
+    "@wordpress/interactivity": "^6.51.0"
+  }
 }

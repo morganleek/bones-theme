@@ -23,7 +23,7 @@ html {
 // }
 
 img {
-	transition: opacity 0.2s;
+	transition: opacity 2s;
 	&[loading="lazy"] {
 		opacity: 0;
 	}
@@ -57,4 +57,11 @@ button {
 p {
 	z-index:
 		1;
+}
+
+main {
+	&.in-load {
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
 }

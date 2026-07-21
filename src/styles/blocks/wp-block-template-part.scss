@@ -1,6 +1,17 @@
 .wp-block-template-part {
 	&:is(header) {
 		background-color: #f0f0f0;
+		nav.wp-block-navigation {
+			.wp-block-navigation__container {
+				& > .wp-block-navigation-item {
+					&.current-menu-item {
+						& > .wp-block-navigation-item__content {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
 	}
 	&:is(footer) {
 		background-color: #0f0f0f;
