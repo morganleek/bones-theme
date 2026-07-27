@@ -1,7 +1,11 @@
 .wp-site-blocks {
 	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr auto;
+	// flex-direction: column;
+	transition: grid-template-rows 0.3s ease-out;
 	body.admin-bar & {
 		min-height: calc(100vh - var(--wp-admin--admin-bar--height));
 	}

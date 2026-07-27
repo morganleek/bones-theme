@@ -1,5 +1,5 @@
 import 'vite/modulepreload-polyfill';
-// import './js/live-load.js';
+import './js/live-load.js';
 import './style.scss';
 
 // Slider - Library import example
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentUpdated', () => {
 } );
 
 const DOMContentLoaded = () => {
-	console.log( "loaded" );
+	// console.log( "loaded " + Date.now() );
 	// Copyright Year
 	document.querySelectorAll(".copyright").forEach((p) => {
 		p.innerHTML = p.innerHTML.replace('{YEAR}', new Date().getUTCFullYear());
