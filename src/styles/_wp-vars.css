@@ -20,6 +20,7 @@
     --wp--preset--spacing--80: 7.5rem;
     --wp--preset--aspect-ratio--four-five-tall: 4/5;
     --wp--preset--aspect-ratio--five-four-wide: 5/4;
+    --wp--custom--color--body: #ff0000;
     --wp--custom--heading-1--typography--font-size: clamp(2rem, 0.75rem + 4vw, 3rem);
     --wp--custom--heading-1--typography--line-height: 1.2;
     --wp--custom--heading-2--typography--font-size: 2rem;

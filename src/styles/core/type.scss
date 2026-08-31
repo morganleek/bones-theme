@@ -1,6 +1,10 @@
-h1, h2, h3, h4, h5, h6 {
-	
-}
+// h1, h2, h3, h4, h5, h6 {
+// }
+
+// Set default color for backgrounds
+.has-custom-charcoal-background-color {
+	color: #fff;
+} 
 
 .has-x-large-font-size {
 	line-height: var(--wp--custom--line-height--x-large);

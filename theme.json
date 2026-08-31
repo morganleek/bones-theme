@@ -33,6 +33,9 @@
 			]
 		},
 		"custom": {
+			"color": {
+				"body": "#ff0000"
+			},
 			"heading-1": {
 				"typography": {
 					"fontSize": "clamp(2rem, 0.75rem + 4vw, 3rem)",
@@ -160,7 +163,8 @@
 							"fontStyle": "normal",
 							"fontWeight": "1 1000",
 							"fontStretch": "100%",
-							"fontDisplay": "swap"
+							"fontDisplay": "swap",
+							"src": ""
 						}
 					],
 					"fontFamily": "\"Google Sans Flex\", sans-serif",
@@ -203,19 +207,12 @@
 					"background": "var(--wp--preset--color--black)",
 					"text": "var(--wp--preset--color--white)"
 				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--white)"
-						}
-					}
-				},
 				"spacing": {
 					"padding": {
-						"bottom": "8px",
-						"left": "15px",
-						"right": "15px",
-						"top": "8px"
+						"bottom": "0.5rem",
+						"left": "1rem",
+						"right": "1rem",
+						"top": "0.5rem"
 					}
 				},
 				"typography": {
@@ -230,7 +227,7 @@
 								"style": "solid",
 								"width": "1px"
 							},
-							"color": null,
+							"color": "",
 							"left": {
 								"color": "currentColor",
 								"style": "solid",
@@ -242,23 +239,23 @@
 								"style": "solid",
 								"width": "1px"
 							},
-							"style": null,
+							"style": "",
 							"top": {
 								"color": "currentColor",
 								"style": "solid",
 								"width": "1px"
 							},
-							"width": null
+							"width": ""
 						},
 						"color": {
 							"text": "var(--wp--preset--color--black)"
 						},
 						"spacing": {
 							"padding": {
-								"bottom": "8px",
-								"left": "16px",
-								"right": "16px",
-								"top": "8px"
+								"bottom": "calc(0.5rem - 1px)",
+								"left": "calc(1rem - 1px)",
+								"right": "calc(1rem - 1px)",
+								"top": "calc(0.5rem - 1px)"
 							}
 						},
 						"typography": {
@@ -277,7 +274,7 @@
 			}
 		},
 		"color": {
-			"text": "var(--wp--preset--color--black)"
+			"text": "var(--wp--custom--color--body)"
 		},
 		"css": ".wp-block-image {\n\t--image-position--offset-x: 0;\n\t--image-position--offset-y: -50%;\n\tfigcaption {\n\t\tfont-style: italic;\n\t\tfont-weight: 200;\n\t}\n\t.wp-block-columns {\n\t\timg {\n\t\t\tmax-width: 100%;\n\t\t}\n\t}\n\t&[class*=\"has-image-position-\"] {\n\t\tposition: absolute;\n\t\tz-index: 9999;\n\t\tpointer-events: none;\n\t\ttransform: translate(var(--image-position--offset-x), var(--image-position--offset-y));\n\t\tmargin: 0 !important;\n\t\t&.block-editor-block-list__block {\n\t\t\tpointer-events: all;\n\t\t}\n\t\t&.has-image-position-top-left {\n\t\t\ttop: 0;\n\t\t\tleft: 0;\n\t\t}\n\t\t&.has-image-position-top-right {\n\t\t\ttop: 0;\n\t\t\tright: 0;\n\t\t}\n\t\t&.has-image-position-middle-left {\n\t\t\ttop: 50%;\n\t\t\tleft: 0;\n\t\t}\n\t\t&.has-image-position-middle-right {\n\t\t\ttop: 50%;\n\t\t\tright: 0;\n\t\t}\n\t\t&.has-image-position-bottom-left {\n\t\t\ttop: 100%;\n\t\t\tleft: 0;\n\t\t}\n\t\t&.has-image-position-bottom-right {\n\t\t\ttop: 100%;\n\t\t\tright: 0;\n\t\t}\n\t\t&.has-image-position-top-left,\n\t\t&.has-image-position-middle-left,\n\t\t&.has-image-position-bottom-left {\n\t\t\t--image-position--offset-x: calc( -1 * min(50%, var(--wp--style--root--padding-left)) );\n\t\t}\n\t\t&.has-image-position-top-right,\n\t\t&.has-image-position-middle-right,\n\t\t&.has-image-position-bottom-right {\n\t\t\t--image-position--offset-x: min(50%, var(--wp--style--root--padding-right));\n\t\t}\n\t}\n}\n\n.no-pointer {\n\tpointer-events: none;\n}",
 		"elements": {
@@ -338,9 +335,6 @@
 				}
 			},
 			"heading": {
-				"color": {
-					"text": "var(--wp--preset--color--black)"
-				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--google-sans-flex)"
 				}

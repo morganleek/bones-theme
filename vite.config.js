@@ -5,7 +5,7 @@ import { wpThemeVarsPlugin } from './vite-plugin-wp-theme-vars.js'
 
 // shared config for js and php. `config.themeFolder` - it's possible to get themeFolder from process.cwd() but in some
 // cases (like Docker) theme folder name in project is not the same as folder name inside WP, so themeFolder is in config.
-import config from './frontend-config.json';
+import config from './frontend-config.json' with { type: 'json' };
 
 export default defineConfig(({ mode }) => {
     const isDev = mode === 'development';
@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
             : `/wp-content/themes/${config.themeFolder}/${config.distFolder}`,
         publicDir: false, // disable copying `public/` to outDir
         build: {
-            outDir: resolve(__dirname, `./${config.distFolder}`),
+            outDir: resolve(import.meta.dirname, `./${config.distFolder}`),
             manifest: true, // need for wordpress to enqueue files (option works only for prod build)
             target: ['es2015', 'edge88', 'firefox78', 'chrome87', 'safari14'], // native ES modules support
             rollupOptions: {
@@ -111,11 +111,11 @@ export default defineConfig(({ mode }) => {
         esbuild: { legalComments: 'none' },
         resolve: {
             alias: {
-                '@': resolve(__dirname, 'src'),
+                '@': resolve(import.meta.dirname, 'src'),
                 // File will be copied to `build.outDir` and url() in css will be `base` + asset filename.
                 // In dev mode Vite serves it at dev server origin, but paths in css are with browserSync origin.
                 // To make it work add `http://localhost:${config.viteServerPort}` as `server.origin`
-                '@img': resolve(__dirname, 'assets/img'), // doesn't work in dev mode!
+                '@img': resolve(import.meta.dirname, 'assets/img'), // doesn't work in dev mode!
             }
         },
     }
