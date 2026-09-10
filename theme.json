@@ -34,7 +34,7 @@
 		},
 		"custom": {
 			"color": {
-				"body": "#ff0000"
+				"body": "#000000"
 			},
 			"heading-1": {
 				"typography": {
