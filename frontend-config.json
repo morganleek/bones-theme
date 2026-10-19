@@ -1,7 +1,7 @@
 {
   "themeFolder": "bones-theme",
   "distFolder": "dist",
-  "proxySource": "https://word.2fo.au",
+  "proxySource": "https://wp.1fo.au",
   "browserSyncPort": 3000,
   "browserSyncSocket": 3001,
   "browserSyncUIPort": 3002,

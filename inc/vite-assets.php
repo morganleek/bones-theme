@@ -170,6 +170,12 @@
 
 	// Checks if current environment is dev by BrowserSync custom header
 	function bones_theme_is_dev_server(): bool {
+		// Only honour the header outside production, so it can't be sent to a live site
+		// to serve (and possibly cache) pages that load scripts from localhost.
+		if ( ! in_array( wp_get_environment_type(), [ 'local', 'development' ], true ) ) {
+			return false;
+		}
+
 		$headers = bones_theme_get_all_headers();
 		
 		if ( empty( $headers ) ) {
