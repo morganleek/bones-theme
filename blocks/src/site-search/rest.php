@@ -2,8 +2,9 @@
 
 function bones_blocks_rest_endpoint() {
 	register_rest_route( 'bones/v1', '/search', [
-		'method' => 'GET',
-		'callback' => 'bones_blocks_rest_route_small_search'
+		'methods' => 'GET',
+		'callback' => 'bones_blocks_rest_route_small_search',
+		'permission_callback' => '__return_true'
 	] );
 }
 
@@ -41,6 +42,8 @@ function bones_blocks_rest_route_small_search( WP_REST_Request $request ) {
 				"postType" => $post_type,
 				"label" => html_entity_decode( get_the_title() ),
 				"image" => get_the_post_thumbnail(get_the_ID(), 'thumbnail', ['loading' => false]),
+				"imageUrl" => get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') ?: null,
+				"imageAlt" => get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true),
 				"url" => get_permalink()
 			] );
 		}	
