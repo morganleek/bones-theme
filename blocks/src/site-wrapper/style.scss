@@ -1,3 +1,21 @@
 .wp-block-bones-blocks-site-wrapper {
 	display: block;
+	main {
+		transition: filter 0.3s ease, opacity 0.3s ease;
+		@media (prefers-reduced-motion: reduce) {
+			transition: opacity 0.3s ease;
+
+			&.is-loading main {
+				filter: none;
+			}
+		}
+	}
+
+	&.is-loading main {
+		filter: blur(4px);
+		opacity: 0.6;
+		pointer-events: none;
+		// Delay only on the way in, so fast navigations don't flash.
+		transition-delay: 0.15s;
+	}
 }

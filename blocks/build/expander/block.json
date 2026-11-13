@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "bones-blocks/expander",
+  "version": "0.1.0",
+  "title": "Expander",
+  "category": "widgets",
+  "icon": "arrow-down-alt2",
+  "description": "Accordion style expander with a header and collapsible body",
+  "example": {},
+  "attributes": {
+    "initiallyOpen": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": true,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "interactivity": true
+  },
+  "textdomain": "bones-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScriptModule": "file:./view.js"
+}

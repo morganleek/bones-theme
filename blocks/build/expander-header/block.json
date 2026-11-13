@@ -1,0 +1,27 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "bones-blocks/expander-header",
+  "version": "0.1.0",
+  "title": "Expander Header",
+  "category": "widgets",
+  "icon": "heading",
+  "description": "Clickable header of an Expander",
+  "parent": [
+    "bones-blocks/expander"
+  ],
+  "supports": {
+    "html": false,
+    "reusable": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "interactivity": true
+  },
+  "textdomain": "bones-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

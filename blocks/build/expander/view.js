@@ -1,0 +1,1 @@
+import{getContext as e,store as t,withSyncEvent as n}from"@wordpress/interactivity";t("bones/expander",{actions:{toggle(t){if(t.target.closest("a[href]"))return;const n=e();n.isOpen=!n.isOpen},onKeydown:n(t=>{if("Enter"!==t.key&&" "!==t.key)return;if(t.target!==t.currentTarget)return;t.preventDefault();const n=e();n.isOpen=!n.isOpen})}});

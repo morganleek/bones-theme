@@ -1,0 +1,1 @@
+.wp-block-bones-blocks-expander-body{display:grid;grid-template-rows:1fr;overflow:hidden;transition:grid-template-rows .5s ease}.wp-block-bones-blocks-expander-body[inert]{grid-template-rows:0fr}@media(prefers-reduced-motion:reduce){.wp-block-bones-blocks-expander-body{transition:none}}.wp-block-bones-blocks-expander-body__inner{min-height:0}

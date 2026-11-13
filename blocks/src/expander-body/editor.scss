@@ -1,0 +1,6 @@
+// Always show the body in the editor; the collapse is front end only.
+.wp-block-bones-blocks-expander-body {
+	display: block;
+	min-height: 1rem;
+	overflow: visible;
+}

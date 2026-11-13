@@ -1,1 +1,1 @@
-.wp-block-bones-blocks-site-wrapper{display:block}
+.wp-block-bones-blocks-site-wrapper{display:block}.wp-block-bones-blocks-site-wrapper main{transition:filter .3s ease,opacity .3s ease}@media(prefers-reduced-motion:reduce){.wp-block-bones-blocks-site-wrapper main{transition:opacity .3s ease}.wp-block-bones-blocks-site-wrapper main.is-loading main{filter:none}}.wp-block-bones-blocks-site-wrapper.is-loading main{filter:blur(4px);opacity:.6;pointer-events:none;transition-delay:.15s}

@@ -1,0 +1,122 @@
+{
+	"$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/block.json",
+	"apiVersion": 3,
+	"name": "bones-blocks/overlay-button",
+	"version": "0.1.0",
+	"title": "Overlay Button",
+	"category": "design",
+	"icon": "button",
+	"description": "A button that opens a Navigation Overlay template part when clicked.",
+	"keywords": [ "button", "overlay", "modal", "popup", "dialog" ],
+	"textdomain": "bones-blocks",
+	"attributes": {
+		"text": {
+			"type": "rich-text",
+			"source": "rich-text",
+			"selector": "button",
+			"role": "content"
+		},
+		"title": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "button",
+			"attribute": "title",
+			"role": "content"
+		},
+		"overlay": {
+			"type": "string"
+		},
+		"placeholder": {
+			"type": "string"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"textColor": {
+			"type": "string"
+		},
+		"gradient": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"html": false,
+		"align": false,
+		"alignWide": false,
+		"reusable": false,
+		"color": {
+			"__experimentalSkipSerialization": true,
+			"gradients": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true
+			}
+		},
+		"typography": {
+			"__experimentalSkipSerialization": [
+				"fontSize",
+				"lineHeight",
+				"textAlign",
+				"fontFamily",
+				"fontWeight",
+				"fontStyle",
+				"textTransform",
+				"textDecoration",
+				"letterSpacing"
+			],
+			"fontSize": true,
+			"lineHeight": true,
+			"textAlign": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalWritingMode": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"shadow": {
+			"__experimentalSkipSerialization": true
+		},
+		"spacing": {
+			"__experimentalSkipSerialization": true,
+			"padding": [ "horizontal", "vertical" ],
+			"__experimentalDefaultControls": {
+				"padding": true
+			}
+		},
+		"__experimentalBorder": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true,
+			"__experimentalSkipSerialization": true,
+			"__experimentalDefaultControls": {
+				"color": true,
+				"radius": true,
+				"style": true,
+				"width": true
+			}
+		},
+		"interactivity": true
+	},
+	"styles": [
+		{ "name": "fill", "label": "Fill", "isDefault": true },
+		{ "name": "outline", "label": "Outline" }
+	],
+	"selectors": {
+		"root": ".wp-block-button .wp-block-button__link",
+		"typography": {
+			"writingMode": ".wp-block-button"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": [ "wp-block-button-editor", "file:./index.css" ],
+	"style": [ "wp-block-button", "file:./style-index.css" ],
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js"
+}
